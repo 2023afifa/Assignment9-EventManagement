@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Card = ({ eventCard }) => {
     const { id, name, image, price, description } = eventCard;
 
@@ -10,7 +12,7 @@ const Card = ({ eventCard }) => {
                     <p>{description}</p>
                     <p>Price: <span className="font-semibold">${price}</span></p>
                     <div className="card-actions">
-                        <button className="btn bg-[#DDD0C8] text-[#99775C]">Click here</button>
+                        <Link to={`/event/${id}`}><button className="btn bg-[#DDD0C8] text-[#99775C]">Click here</button></Link>
                     </div>
                 </div>
             </div>
