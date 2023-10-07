@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Wedding",
+        "image": "https://i.ibb.co/hsxzhtt/Wedding.jpg",
+        "price": 2000,
+        "description": "Create your dream wedding with our expert planning and coordination services.",
+        "detail": "Your wedding day is one of the most important and cherished moments in life, and we're here to make it absolutely perfect. At EventFusionHub, we specialize in creating dream weddings that reflect your unique love story. From breathtaking venues to exquisite decor, we ensure every detail is meticulously planned. Our expert team of wedding planners and coordinators will work closely with you to bring your vision to life. Whether you desire an intimate garden ceremony or a grand ballroom affair, we have the experience and creativity to make your wedding day truly magical."
+    },
+    {
+        "id": 2,
+        "name": "Birthday Party",
+        "image": "https://i.ibb.co/KX60DNQ/Birthday.jpg",
+        "price": 500,
+        "description": "Celebrate another year of life with a fun and memorable birthday party.",
+        "detail": "Birthdays are a time for joy and celebration, and we're here to turn your special day into an unforgettable bash. EventFusionHub specializes in crafting fun and memorable birthday parties for all ages. Whether it's a child's whimsical themed party, a surprise celebration for a loved one, or a milestone birthday extravaganza, we have the ideas and expertise to create an event that captures the essence of the guest of honor. Let us handle the planning, decor, and entertainment while you enjoy the festivities."
+    },
+    {
+        "id": 3,
+        "name": "Anniversary",
+        "image": "https://i.ibb.co/F6S7LsD/Anniversary.jpg",
+        "price": 800,
+        "description": "Mark years of love and commitment with a special anniversary celebration.",
+        "detail": "Celebrating years of love and commitment is a beautiful journey, and we're here to mark this significant milestone with elegance and style. EventFusionHub offers expert planning services for anniversary celebrations. Whether you're commemorating a few years or a lifetime together, we can help you plan an intimate dinner, a romantic getaway, or a lavish party. We understand the sentimental value of anniversaries, and our team will ensure that every moment is filled with love and nostalgia."
+    },
+    {
+        "id": 4,
+        "name": "Engagement Party",
+        "image": "https://i.ibb.co/qWnchW3/Engagement.jpg",
+        "price": 600,
+        "description": "Start your journey to forever with a joyful engagement party.",
+        "detail": "An engagement marks the beginning of a beautiful journey towards marriage, and it deserves a special celebration. EventFusionHub specializes in creating joyous and memorable engagement parties. We'll work closely with you to plan an event that captures the excitement and love you share as you embark on this new chapter. From selecting the perfect venue to designing custom decor, we take care of all the details so you can focus on your loved ones and the joy of your commitment."
+    },
+    {
+        "id": 5,
+        "name": "Retirement Party",
+        "image": "https://i.ibb.co/7p7vNLm/Retirement.jpg",
+        "price": 400,
+        "description": "Bid farewell to a long and successful career with a memorable retirement party.",
+        "detail": "Retirement is a well-deserved transition in life, and we're here to celebrate the achievements and adventures of your career. EventFusionHub offers retirement party planning services that honor your professional journey. Whether it's a casual gathering with colleagues or a formal farewell event, we'll create an atmosphere that reflects your personality and achievements. Let us handle the logistics while you enjoy a memorable send-off into the next phase of life."
+    },
+    {
+        "id": 6,
+        "name": "Baby Shower",
+        "image": "https://i.ibb.co/xjRK7C7/Baby-shower.jpg",
+        "price": 300,
+        "description": "Celebrate the upcoming arrival of a bundle of joy with a heartwarming baby shower.",
+        "detail": "Welcoming a new life into the world is a heartwarming experience, and EventFusionHub specializes in creating heartfelt baby showers. Whether you're a parent-to-be or a loved one planning a surprise, we'll help you plan an event that celebrates the upcoming arrival with joy and love. From themed decor to interactive games, we take care of every detail to make the day unforgettable for you and your guests."
+    }
+]
