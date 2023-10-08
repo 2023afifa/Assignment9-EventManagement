@@ -3,6 +3,8 @@ import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import Card from "../Card/Card";
+import FAQ from "../FAQ/FAQ";
+import Team from "../Team/Team";
 
 const Home = () => {
     const eventCards = useLoaderData();
@@ -22,6 +24,8 @@ const Home = () => {
                         }
                     </div>
                 </div>
+                <Team></Team>
+                <FAQ></FAQ>
             </div>
             <div className="bg-[#DDD0C8]">
                 <Footer></Footer>
