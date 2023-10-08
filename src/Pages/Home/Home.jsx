@@ -9,8 +9,10 @@ const Home = () => {
 
     return (
         <div>
-            <div className="lg:w-[1350px] mx-auto">
+            <div className="bg-[#DDD0C8]">
                 <Navbar></Navbar>
+            </div>
+            <div className="lg:w-[1350px] mx-auto">
                 <Banner></Banner>
                 <div className="my-20">
                     <h3 className="text-xl font-semibold text-center mb-10">Our Services</h3>

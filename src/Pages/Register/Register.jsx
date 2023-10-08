@@ -4,6 +4,7 @@ import auth from "../../Firebase/firebase.config";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from "../Navbar/Navbar";
 
 const Register = () => {
     const [errorMessage, setErrorMessage] = useState("");
@@ -46,6 +47,9 @@ const Register = () => {
 
     return (
         <div>
+
+            <Navbar></Navbar>
+
             <h2 className="text-3xl text-[#99775C] font-bold text-center mt-10">Please Register</h2>
             <form onSubmit={handleRegister} className="card-body lg:w-1/2 mx-auto">
                 <div className="form-control">
