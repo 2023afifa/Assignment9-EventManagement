@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import auth from "../../Firebase/firebase.config";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../Navbar/Navbar";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext);
     const [errorMessage, setErrorMessage] = useState("");
 
     const handleRegister = e => {
@@ -32,10 +33,19 @@ const Register = () => {
             return;
         }
 
-        createUserWithEmailAndPassword(auth, email, password)
+        createUser(email, password)
             .then(result => {
                 console.log(result.user);
                 toast("Your registration is done successfully");
+
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photo,
+                })
+                .then(() => {
+                    console.log("Profile updated");
+                })
+                .catch()
             })
             .catch(error => {
                 console.error(error);

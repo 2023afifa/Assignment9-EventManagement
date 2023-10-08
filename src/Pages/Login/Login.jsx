@@ -1,12 +1,12 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
 import { Link } from "react-router-dom";
-import auth from "../../Firebase/firebase.config";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../Navbar/Navbar";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
+    const { logInUser, logInUserGoogle } = useContext(AuthContext);
     const [errorMessage, setErrorMessage] = useState("");
 
     const handleLogin = e => {
@@ -16,7 +16,7 @@ const Login = () => {
 
         setErrorMessage("");
 
-        signInWithEmailAndPassword(auth, email, password)
+        logInUser(email, password)
             .then(result => {
                 console.log(result.user);
                 toast("Logged in successfully");
@@ -27,12 +27,22 @@ const Login = () => {
             })
     }
 
+    const handleGoogleLogIn = () => {
+        logInUserGoogle()
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
     return (
         <div>
 
             <Navbar></Navbar>
 
-            <h2 className="text-3xl text-[#99775C] font-bold text-center mt-20">Please Login</h2>
+            <h2 className="text-3xl text-[#99775C] font-bold text-center mt-10">Please Login</h2>
             <form onSubmit={handleLogin} className="card-body lg:w-1/2 mx-auto">
                 <div className="form-control">
                     <label className="label">
@@ -53,7 +63,8 @@ const Login = () => {
                     <button className="btn bg-[#DDD0C8] text-[#99775C]">Login</button>
                 </div>
             </form>
-            <p className="text-center">Don't have an account? Please <Link className="text-[#99775C] font-bold" to="/register">Register</Link></p>
+            <p className="text-center">Do not have an account? Please <Link className="text-[#99775C] font-bold" to="/register">Register</Link></p>
+            <p className="text-center mt-3">You can login with <a onClick={handleGoogleLogIn} className="text-sky-500 font-bold">Google</a></p>
             <ToastContainer />
         </div>
     );
