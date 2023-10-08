@@ -3,7 +3,7 @@ const Footer = () => {
         <div className="py-10 text-base-content">
             <footer className="footer lg:max-w-6xl mx-auto">
                 <aside className="my-auto">
-                    <h1 className="text-3xl">Memorable<span className="text-[#99775C]">Moments</span></h1>
+                    <h1 className="text-3xl font-bold">Memorable<span className="text-[#99775C]">Moments</span></h1>
                 </aside>
                 <nav>
                     <header className="footer-title">Services</header>
