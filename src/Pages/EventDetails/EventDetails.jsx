@@ -11,7 +11,7 @@ const EventDetails = () => {
             <img className="w-2/3 mx-auto" src={event.image} alt="" />
             <h2 className="text-4xl font-bold mt-5 mb-2">{event.name}</h2>
             <p className="text-lg">{event.detail}</p>
-            <div className="w-1/3 p-5 bg-[#DDD0C8] mx-auto mt-6">
+            <div className="w-4/5 md:w-2/5 lg:w-1/3 p-5 bg-[#DDD0C8] mx-auto mt-6">
                 <p className="font-medium text-2xl">{event.description}</p>
                 <p className="font-bold text-3xl mt-5">${event.price} Only</p>
             </div>

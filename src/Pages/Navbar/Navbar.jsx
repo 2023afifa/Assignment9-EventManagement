@@ -39,7 +39,7 @@ const Navbar = () => {
                             {navLink}
                         </ul>
                     </div>
-                    <h1 className="text-3xl font-bold">Memorable<span className="text-[#99775C]">Moments</span></h1>
+                    <h1 className="md:text-3xl font-bold">Memorable<span className="text-[#99775C]">Moments</span></h1>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-semibold">
@@ -47,7 +47,6 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-
                     {
                         user ?
                             <>
@@ -56,7 +55,7 @@ const Navbar = () => {
                                         <img src={user.photoURL} />
                                     </div>
                                 </label>
-                                <span className="ml-1 mr-3 font-medium">{user.email}</span>
+                                <span className="ml-1 mr-3 font-medium hidden md:block">{user.email}</span>
                                 <button onClick={handleLogout} className="btn">Log Out</button>
                             </>
                             : <Link to="/login"><button className="btn">Log In</button></Link>
