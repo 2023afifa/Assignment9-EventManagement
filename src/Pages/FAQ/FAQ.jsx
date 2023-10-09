@@ -1,6 +1,15 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const FAQ = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
-        <div className="my-20">
+        <div className="my-20" data-aos="zoom-in-up">
             <h2 className="text-xl font-semibold text-center mb-5">Frequently Asked Questions</h2>
             <div className="collapse collapse-arrow bg-[#FDF8F0]">
                 <input type="radio" name="my-accordion-2" />

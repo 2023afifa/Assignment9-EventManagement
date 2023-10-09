@@ -1,8 +1,17 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Team = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div>
             <h2 className="text-xl font-semibold text-center mb-5">Our Team</h2>
-            <div className="grid lg:grid-cols-3 gap-24">
+            <div className="grid lg:grid-cols-3 gap-24" data-aos="zoom-in-down">
                 <div>
                     <img className="h-[500px]" src="https://i.ibb.co/23bcM6T/woman1.jpg" alt="" />
                     <p className="mt-3 text-center text-neutral-400">"Welcome to our world of creativity and celebration! I'm Emily, and I'm passionate about turning dreams into reality. With a background in design and a love for all things artistic, I ensure that every event we curate is a work of art. Our team's attention to detail, combined with a dash of whimsy, guarantees unforgettable moments."</p>
