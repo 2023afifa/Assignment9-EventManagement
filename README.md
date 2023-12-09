@@ -1,8 +1,11 @@
-# React + Vite
+Website Name: MemorableMoments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link: https://eventsocial-537f2.web.app/
 
-Currently, two official plugins are available:
+Five bullet points mentioning different features and functionalities of my website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This website is an social event management website named MemorableMoments. Here, you will see all the services that we provide. We provide six services. a) Wedding party b) Birthday party c) Anniversary party d) Engagement party e) Retirement party and f) Baby shower.
+In the home page you will see our founders and their messages.
+You will also see some FAQ in the below of the home page.
+If you create an account you will see some extra information about us, like, the detail information about each services.
+By creating an account you can also see some event pictures designed by us and some customer review.
