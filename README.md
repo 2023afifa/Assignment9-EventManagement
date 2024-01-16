@@ -1,7 +1,5 @@
 Website Name: MemorableMoments
 
-Live Link: https://eventsocial-537f2.web.app/
-
 Five bullet points mentioning different features and functionalities of my website
 
 This website is an social event management website named MemorableMoments. Here, you will see all the services that we provide. We provide six services. a) Wedding party b) Birthday party c) Anniversary party d) Engagement party e) Retirement party and f) Baby shower.
